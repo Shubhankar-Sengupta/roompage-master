@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Room homepage</title>
+
+  <style>
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+    
+  </style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="design.css">
+
+</head>
+
+<body>
+
+  <main class="container-fluid main-content">
+
+    <header class="main-heading">
+
+      <nav class="navbar-nav navbar-expand-md navbar-light utility">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- Modal -->
+        <div class="modal fade d-md-none" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <ul>
+
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <h1 class="navbar-brand fit-bit">room</h1>
+
+        <ul class="d-md-inline d-none" id="navcontent">
+
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+
+        </ul>
+
+      </nav>
+
+      <!-- carousel-inner -->
+
+
+      <div id="carousel_Control" class="carousel slide" data-bs-interval="false">
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+
+            <img src="./images/desktop-image-hero-1.jpg" class="img-fluid hero-1" alt="hero-1">
+
+          </div>
+
+
+          <div class="carousel-item">
+
+            <img src="./images/desktop-image-hero-2.jpg" class="img-fluid hero-2" alt="hero-2">
+
+          </div>
+
+          <div class="carousel-item">
+
+            <img src="./images/desktop-image-hero-3.jpg" class="img-fluid hero-3" alt="hero-3">
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+
+    <section class="primary-content">
+
+      <div class="main-position-content">
+
+        <section class="part-1">
+
+          <h2>Discover innovative ways to decorate</h2>
+
+          We provide unmatched quality, comfort, and style for property owners across the country.
+          Our experts combine form and function in bringing your vision to life. Create a room in your
+          own style with our collection and make your property a reflection of you and what you love.
+
+          <div class="bolt">
+
+            Shop now
+
+            <span>
+              <img src="./images/icon-arrow.svg" alt="icon-arrow">
+            </span>
+
+          </div>
+
+        </section>
+
+
+        <section class="hidden part-2">
+
+          <h2>We are available all across the globe</h2>
+
+          With stores all over the world, it's easy for you to find furniture for your home or place of business.
+          Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+          store locator. Any questions? Don't hesitate to contact us today.
+
+          <div class="bolt">
+            Shop now
+
+            <span>
+              <img src="./images/icon-arrow.svg" alt="icon-arrow">
+            </span>
+
+          </div>
+
+        </section>
+
+        <section class="hidden part-3">
+
+          <h2>Manufactured with the best materials</h2>
+
+          Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
+          to ensure that every product is made as perfect and as consistent as possible. With three decades of
+          experience in this industry, we understand what customers want for their home and office.
+
+          <div class="bolt">
+            Shop now
+
+            <span>
+              <img src="./images/icon-arrow.svg" alt="icon-arrow">
+            </span>
+
+          </div>
+        </section>
+
+        <svg class="blurp" xmlns="http://www.w3.org/2000/svg" width="160" height="80" viewBox="0 0 160 80" fill="none">
+          <rect x="80" width="80" height="80" fill="black" />
+          <path class="carousel-control-prev-icon icon-next" data-bs-target="#carousel_Control" data-bs-slide="next"
+            d="M114 28L126 40L114 52" stroke="white" />
+          <rect width="80" height="80" fill="black" />
+          <path class="carousel-control-next-icon icon-prev" data-bs-target="#carousel_Control" data-bs-slide="prev"
+            d="M46 28L34 40L46 52" stroke="white" />
+        </svg>
+
+      </div>
+
+    </section>
+
+    <section class="secondary-content">
+
+      <div>
+        <img src="./images/image-about-dark.jpg" class="img-fluid" style="width: 100%;" alt="round_table">
+      </div>
+
+      <div class="seperate-content">
+
+        <h3 class="furniture">About our furniture</h3>
+
+        Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.
+      </div>
+
+      <div>
+        <img src="./images/image-about-light.jpg" class="img-fluid" style="width: 100%;" alt="four_legged_chair">
+      </div>
+
+    </section>
+  </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Shubhankar Sengupta</a>.
+  </div> -->
+
+</body>
+
+<script src="design.js"></script>
+
+</html>
